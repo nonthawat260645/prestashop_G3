@@ -9,12 +9,7 @@ services:
       PMA_HOST: mysql
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
-    restart: unless-stopped
-    ports:
-      - "8081:80"
-    networks:
-      - prestashop_network
-
+    restart: unless-sto
   mysql:
     container_name: project_G3
     platform: linux/x86_64
@@ -41,13 +36,14 @@ services:
       PS_FOLDER_ADMIN: Controller
       PS_FOLDER_INSTALL: presint
       PS_DOMAIN: localhost:8080
+
     networks:
       - prestashop_network
     volumes:
       - type: bind
         source: ./ # local path to the module
         target: /var/www/html/ 
-      - psdata:/var/www/html
+      - psdata:/var/www/html/
       
 networks:
   prestashop_network:
