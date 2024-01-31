@@ -1,4 +1,10 @@
 # G3_SEC4
+
+## Sprint 1
+
+* Docker : https://hub.docker.com/repository/docker/nuttakitcs/prestashopsec4/general
+---
+
 ## MEMBER 
 ![StudentPhoto](./media/studentphoto.png)
 * NUTTAKIT THAIPHUTTRA
@@ -35,3 +41,4 @@
 * 643020649-4
 * SEC 4
 * GITHUB : Siraphat23
+
