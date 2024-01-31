@@ -45,12 +45,10 @@ services:
       - prestashop_network
     volumes:
       - type: bind
-        source: ./modules/testModule # local path to the module
-        target: /var/www/html/modules/testModule # path to be mounted in the container
-      - type: bind
-        source: ./themes/myTheme # local path to the theme
-        target:  /var/www/html/themes/myTheme # path to be mounted in the container
+        source: ./ # local path to the module
+        target: /var/www/html/ 
       - psdata:/var/www/html
+      
 networks:
   prestashop_network:
 volumes:
